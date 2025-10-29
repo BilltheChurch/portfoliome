@@ -27,6 +27,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
@@ -34,3 +35,21 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDEs and editors
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Memory and cache
+.cunzhi-memory/
+
+# Documentation (keep in local only)
+OPENSPEC.md
+CUSTOMIZATION_PLAN.md
+PROJECT_TEMPLATE.tsx
+
+# Lock files (keep yarn.lock, ignore others)
+package-lock.json

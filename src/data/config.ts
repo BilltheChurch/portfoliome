@@ -1,41 +1,38 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Yule (Tim) Yang | Founder & CTO",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Portfolio of Yule (Tim) Yang, Founder & CTO at Wayve (优航AI) and Imperial College AI/ML Alum. I'm an entrepreneur and engineer driven by a mission to fix the 'broken bridge' between education and employment. Discover my journey from building Frontier Academy to scaling AI-powered student success with Wayve.",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Founder & CTO at Wayve (优航AI) | AI Entrepreneur scaling education with cutting-edge technology",
   },
   keywords: [
-    "Naresh",
-    "portfolio",
+    "Yule Yang",
+    "Tim Yang",
+    "AI entrepreneur",
+    "Founder & CTO",
+    "Wayve AI",
+    "Frontier Academy",
+    "EdTech",
+    "AI/ML engineer",
+    "Imperial College",
     "full-stack developer",
-    "creative technologist",
-    "web development",
-    "3D animations",
-    "interactive websites",
-    "Coding Ducks",
-    "The Booking Desk",
-    "Ghostchat",
-    "web design",
-    "GSAP",
     "React",
+    "TypeScript",
+    "Python",
+    "NLP",
+    "PyTorch",
     "Next.js",
-    "Spline",
-    "Framer Motion",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
-  site: "https://nareshkhatri.site",
+  author: "Yule (Tim) Yang",
+  email: "billthechurch@gmail.com",
+  site: "https://yule-yang.vercel.app", // 将在部署后自动更新为实际域名
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    github: "https://github.com/billthechurch",
+    linkedin: "https://www.linkedin.com/in/yule-yang-45596b229/",
   },
 };
 export { config };

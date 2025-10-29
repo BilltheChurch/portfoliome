@@ -236,463 +236,405 @@ export type Project = {
 };
 const projects: Project[] = [
   {
-    id: "codingducks",
-    category: "Coding platform",
-    title: "Coding Ducks",
-    src: "/assets/projects-screenshots/codingducks/landing.png",
-    screenshots: ["landing.png"],
+    id: "wayve-ai",
+    category: "EdTech AI Platform",
+    title: "Wayve (优航AI)",
+    src: "/assets/projects-screenshots/wayve-ai/main.png", // TODO: 需要添加截图
+    screenshots: ["dashboard.png", "matching.png", "mentor.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.react,
         PROJECT_SKILLS.next,
-        PROJECT_SKILLS.chakra,
-        PROJECT_SKILLS.reactQuery,
-        PROJECT_SKILLS.firebase,
+        PROJECT_SKILLS.tailwind,
       ],
       backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.prisma,
         PROJECT_SKILLS.python,
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.firebase,
         PROJECT_SKILLS.postgres,
-        PROJECT_SKILLS.sockerio,
       ],
     },
-    live: "https://www.codingducks.xyz/",
-    github: "https://github.com/Naresh-Khatri/Coding-Ducks",
+    live: "https://frontieracademy.co",
+    github: undefined, // 私有项目
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono text-2xl text-center">
-            Coding ducks = LeetCode + CodePen + CSS Battles
+          <TypographyP className="font-mono text-xl font-bold text-center mb-4">
+            Scaling Elite Admissions Expertise with AI
           </TypographyP>
-          <TypographyP className="font-mono ">
-            Coding Ducks is your coding dojo — where you level up your skills,
-            battle in real-time code duels, and earn badges like a true code
-            warrior. Track your progress, flex your brain, and climb the
-            leaderboard. Ready to quack the code?
+          <TypographyP className="font-mono">
+            Wayve (优航AI) is an AI co-pilot that guides students from college 
+            application to their first career. We're building on proven success from 
+            Frontier Academy, which achieved a <strong>~90% G5 offer rate</strong> with 
+            1,500+ students served.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Problems </TypographyH3>
+          
+          <TypographyH3 className="my-4 mt-8">🎯 Mission</TypographyH3>
           <p className="font-mono mb-2">
-            Solve coding problems similar to LeetCode, enhancing your
-            problem-solving skills across various languages.
+            Fixing the "broken bridge" between education and employment by making 
+            elite guidance accessible to every ambitious student, not just the privileged few.
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/codingducks/problems.png`,
-              `${BASE_PATH}/codingducks/problem.png`,
+              `${BASE_PATH}/wayve-ai/dashboard.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Ducklets</TypographyH3>
+          
+          <TypographyH3 className="my-4 mt-8">🤖 AI-Powered Matching</TypographyH3>
           <p className="font-mono mb-2">
-            Collaborate in real-time with others in a multiplayer coding
-            environment, just like CodePen but with a social twist.
+            Our proprietary <strong>9D matching algorithm</strong> connects students with 
+            the perfect mentors from our network of 30+ experts. Powered by advanced NLP 
+            and machine learning, trained on our unique dataset from Frontier Academy.
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/codingducks/ducklets.png`,
-              `${BASE_PATH}/codingducks/ducklet1.png`,
-              `${BASE_PATH}/codingducks/ducklet2.png`,
+              `${BASE_PATH}/wayve-ai/matching.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">UI Battles </TypographyH3>
-
+          
+          <TypographyH3 className="my-4 mt-8">📚 Comprehensive Database</TypographyH3>
           <p className="font-mono mb-2">
-            Challenge yourself to create UI components with HTML/CSS/JS, and get
-            instant feedback with an automated similarity scoring.
+            Access to <strong>6,000+ universities</strong> globally, with detailed 
+            program information, admission requirements, and success strategies. 
+            All curated and validated by our expert team.
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/codingducks/css-battles.png`,
-              `${BASE_PATH}/codingducks/css-battle.png`,
-              `${BASE_PATH}/codingducks/css-battle2.png`,
+              `${BASE_PATH}/wayve-ai/mentor.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Contests </TypographyH3>
+          
+          <TypographyH3 className="my-4 mt-8">🚀 Traction & Growth</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2 mb-4">
+            <li className="font-mono">
+              <strong>Profitable consultancy</strong> with proven ~90% G5 offer rate
+            </li>
+            <li className="font-mono">
+              <strong>1,500+ students</strong> successfully served
+            </li>
+            <li className="font-mono">
+              <strong>30+ expert mentors</strong> in our network
+            </li>
+            <li className="font-mono">
+              <strong>5+ pilot agreements</strong> secured for platform rollout
+            </li>
+            <li className="font-mono">
+              <strong>a16z Speedrun accelerator</strong> participant
+            </li>
+          </ul>
+          
+          <TypographyH3 className="my-4 mt-8">💡 Technology Stack</TypographyH3>
           <p className="font-mono mb-2">
-            Organize or participate in coding competitions. Successfully used to
-            host three contests during college.
+            Built with cutting-edge AI/ML technologies:
           </p>
-          <SlideShow images={[`${BASE_PATH}/codingducks/contests.png`]} />
-          <TypographyH3 className="my-4 mt-8">Playground </TypographyH3>
-          <p className="font-mono mb-2">
-            Test and execute your code instantly in my versatile online code
-            runner.
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li className="font-mono">
+              <strong>NLP & PyTorch</strong> for intelligent matching and recommendations
+            </li>
+            <li className="font-mono">
+              <strong>React & Next.js</strong> for blazing-fast user experience
+            </li>
+            <li className="font-mono">
+              <strong>Firebase & PostgreSQL</strong> for scalable data management
+            </li>
+            <li className="font-mono">
+              <strong>Custom fine-tuning</strong> on proprietary admissions dataset
+            </li>
+          </ul>
+          
+          <p className="font-mono mb-2 mt-8 text-center italic">
+            "From profitable R&D lab to globally scalable AI platform. 
+            This is how we democratize access to elite guidance."
           </p>
-          <SlideShow images={[`${BASE_PATH}/codingducks/playground.png`]} />
-          <TypographyH3 className="my-4 mt-8">Users</TypographyH3>
-
-          <p className="font-mono mb-2">
-            Track your progress, earn badges, and climb the rankings with
-            detailed user profiles and activity tracking.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/codingducks/users.png`,
-              `${BASE_PATH}/codingducks/user.png`,
-            ]}
-          />
         </div>
       );
     },
   },
   {
-    id: "couponluxury",
-    category: "Coupon site",
-    title: "Coupon Luxury",
-    src: "/assets/projects-screenshots/couponluxury/landing.png",
-    screenshots: ["1.png", "2.png", "3.png", "4.png", "5.png"],
-    live: "https://www.couponluxury.com/",
+    id: "frontier-academy",
+    category: "EdTech Consultancy",
+    title: "Frontier Academy",
+    src: "/assets/projects-screenshots/frontier-academy/main.png", // TODO: 需要添加截图
+    screenshots: ["students.png", "mentors.png", "results.png"],
     skills: {
       frontend: [
-        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.react,
         PROJECT_SKILLS.next,
-        PROJECT_SKILLS.chakra,
-        PROJECT_SKILLS.vue,
+        PROJECT_SKILLS.tailwind,
       ],
       backend: [
         PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.prisma,
+        PROJECT_SKILLS.firebase,
         PROJECT_SKILLS.postgres,
-        PROJECT_SKILLS.docker,
       ],
     },
-    get content(): JSX.Element {
-      return (
-        <div>
-          <TypographyP className="font-mono ">
-            CouponLuxury is your go-to destination for snagging the best deals
-            without lifting a finger. Whether you&apos;re hunting for the latest
-            discounts or trying to save a buck at your favorite stores,
-            CouponLuxury&apos;s got you covered.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <p className="font-mono mb-2 mt-4">
-            As soon as you land, boom! You&apos;re greeted with the freshest
-            coupons and top-tier deals that&apos;ll make your wallet happy.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/couponluxury/landing.png`]} />
-          <TypographyH3 className="my-4 ">Stores</TypographyH3>
-          <p className="font-mono mb-2">
-            Dive into a comprehensive list of stores, each packed with exclusive
-            deals and discounts. It&apos;s like having a VIP pass to every sale
-            in town.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/couponluxury/stores.png`,
-              `${BASE_PATH}/couponluxury/store.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Categories</TypographyH3>
-
-          <p className="font-mono mb-2">
-            Whatever you&apos;re into—fashion, tech, food—you&apos;ll find it
-            neatly organized here. No more endless scrolling; just pick a
-            category and get the best offers instantly.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/couponluxury/categories.png`]} />
-          <TypographyH3 className="my-4 mt-8">Custom CMS </TypographyH3>
-          <p className="font-mono mb-2">
-            Powered by Vue.js, this bad boy allows us to keep the content
-            dynamic and up-to-date. From flash sales to limited-time offers, my
-            CMS ensures everything&apos;s live and relevant.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/couponluxury/cms-1.png`,
-              `${BASE_PATH}/couponluxury/cms-2.png`,
-            ]}
-          />
-          <p className="font-mono mb-2 mt-5">
-            Plus, I&apos;ve sprinkled in some extra magic like personalized
-            deal recommendations, user-friendly search features, and a sleek,
-            responsive design that works like a charm on any device.
-          </p>
-          <p className="font-mono mb-2">
-            CouponLuxury isn&apos;t just a website; it&apos;s your personal deal-hunting
-            assistant, ensuring you never miss out on a bargain!
-          </p>
-          {/* <TypographyP className="my-4 mt-8">
-          <strong>Misc:</strong>
-          Hosted not one, not two, but THREE coding contests (Codemacha) during
-          college. Safe to say, Coding Ducks passed the vibe check.
-        </TypographyP>
-        <TypographyP className="my-4 mt-8">
-          <strong>Target Audience:</strong>
-          For all the novice coders out there ready to make their mark.
-        </TypographyP> */}
-        </div>
-      );
-    },
-  },
-  {
-    id: "the-booking-desk",
-    category: "Travel",
-    title: "The Booking Desk",
-    src: "/assets/projects-screenshots/the-booking-desk/landing.png",
-    screenshots: ["1.png"],
-    live: "https://thebookingdesk.com/",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.aceternity,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [PROJECT_SKILLS.sanity],
-    },
+    live: "https://frontieracademy.co",
+    github: undefined, // 私有项目
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono ">
-            The Booking Desk is your ultimate travel consultation hub, designed
-            to turn your wanderlust dreams into reality. With a focus on smooth
-            and visually captivating animations, navigating the site feels like
-            a breeze—it&apos;s almost as if the destinations are calling you.
+          <TypographyP className="font-mono text-xl font-bold text-center mb-4">
+            Market-Leading Elite Admissions Consultancy
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Built from zero to one as a solo founder, Frontier Academy is now 
+            the market leader in elite university admissions consulting. We've 
+            created a repeatable system for success, achieving a <strong>near-90% 
+            G5 offer rate</strong> in hyper-competitive programs like Imperial's 
+            Bioengineering.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <p className="font-mono mb-2 mt-8">
-            A sleek, modern interface greets you, featuring the latest travel
-            tips, deals, and must-visit spots around the globe.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/the-booking-desk/landing.png`]} />
-          <TypographyH3 className="my-4 mt-8">Blogs</TypographyH3>
+          
+          <TypographyH3 className="my-4 mt-8">🎯 The Challenge</TypographyH3>
           <p className="font-mono mb-2">
-            Dive into the curated articles written by travel experts. Whether
-            you&apos;re looking for hidden gems or travel hacks, our blog section has
-            you covered.
+            As a solo founder, I had to rapidly master every aspect of building 
+            a business from scratch—marketing, sales, product design, and client 
+            success. This wasn't just consulting; it was creating a repeatable 
+            system for student success.
           </p>
+          
+          <TypographyH3 className="my-4 mt-8">📊 Results & Impact</TypographyH3>
+          <ul className="list-disc ml-6 space-y-2 mb-4">
+            <li className="font-mono">
+              <strong>~90% G5 offer rate</strong> in hyper-competitive programs
+            </li>
+            <li className="font-mono">
+              <strong>1,500+ students</strong> successfully guided
+            </li>
+            <li className="font-mono">
+              <strong>30+ expert mentors</strong> recruited and trained
+            </li>
+            <li className="font-mono">
+              <strong>Profitable from year one</strong> - bootstrapped growth
+            </li>
+            <li className="font-mono">
+              <strong>Proprietary methodology</strong> that became the foundation for Wayve AI
+            </li>
+          </ul>
           <SlideShow
             images={[
-              `${BASE_PATH}/the-booking-desk/blogs.png`,
-              `${BASE_PATH}/the-booking-desk/blog.png`,
+              `${BASE_PATH}/frontier-academy/students.png`,
+              `${BASE_PATH}/frontier-academy/mentors.png`,
+              `${BASE_PATH}/frontier-academy/results.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Sanity CMS</TypographyH3>
-
+          
+          <TypographyH3 className="my-4 mt-8">💡 Key Innovations</TypographyH3>
           <p className="font-mono mb-2">
-            Keeping everything fresh and up-to-date, I&apos;ve integrated Sanity CMS
-            to manage all the content with ease, ensuring you always get the
-            latest and greatest information.
+            Developed a systematic approach to admissions success:
           </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/the-booking-desk/cms-1.png`,
-              `${BASE_PATH}/the-booking-desk/cms-2.png`,
-            ]}
-          />
-          <p className="font-mono mb-2 my-8">
-            With a stunning 100% score on Lighthouse, The Booking Desk isn&apos;t
-            just beautiful—it&apos;s built to perform. Whether you&apos;re planning your
-            next adventure or just daydreaming, our site delivers a top-notch
-            experience that&apos;s both informative and enjoyable.
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li className="font-mono">
+              <strong>Personalized guidance framework</strong> based on student profiles
+            </li>
+            <li className="font-mono">
+              <strong>Mentor matching algorithm</strong> (manual v1.0, now AI-powered in Wayve)
+            </li>
+            <li className="font-mono">
+              <strong>Data-driven insights</strong> from 1,500+ application cycles
+            </li>
+            <li className="font-mono">
+              <strong>Scalable operations</strong> built for growth
+            </li>
+          </ul>
+          
+          <p className="font-mono mb-2 mt-8 text-center italic">
+            "Frontier Academy proved I have the grit and resourcefulness to build 
+            a successful company. It's now our R&D lab for scaling with AI."
           </p>
         </div>
       );
     },
   },
   {
-    id: "portfolio",
-    category: "Portfolio",
-    title: "My Portfolio",
-    src: "/assets/projects-screenshots/portfolio/landing.png",
-    screenshots: ["1.png"],
-    live: "http://nareshkhatri.vercel.app",
-    github:"https://github.com/Naresh-Khatri/Portfolio",
+    id: "ai-safety-society",
+    category: "Community & Leadership",
+    title: "AI Safety Society @ Imperial",
+    src: "/assets/projects-screenshots/ai-safety-society/main.png", // TODO: 需要添加截图
+    screenshots: ["events.png", "community.png", "partnership.png"],
     skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.shadcn,
-        PROJECT_SKILLS.aceternity,
-        PROJECT_SKILLS.framerMotion,
-        PROJECT_SKILLS.tailwind,
-        PROJECT_SKILLS.spline,
-      ],
+      frontend: [],
       backend: [],
     },
+    live: "https://www.linkedin.com/in/yule-yang-45596b229/", // 或社团官方链接
+    github: undefined,
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono ">
-            Welcome to my digital playground, where creativity meets code in the
-            dopest way possible.
+          <TypographyP className="font-mono text-xl font-bold text-center mb-4">
+            Building Imperial's First AI Safety Community
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Founded the first-ever AI Safety society at Imperial College London, 
+            identifying a critical gap in the university's ecosystem and building 
+            a thriving community from nothing.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">
-            Beautiful 3D Objects{" "}
-          </TypographyH3>
+          
+          <TypographyH3 className="my-4 mt-8">🚀 From Zero to Top 3</TypographyH3>
           <p className="font-mono mb-2">
-            Did you see that 3D keyboard modal? Yeah! I made that. That
-            interactive keyboard is being rendered in 3D on a webpage 🤯, and
-            pressing each keycap reveals a skill in a goofy way. It&apos;s like
-            typing, but make it art.
+            In our first year, we became one of the <strong>top 3 most active 
+            societies</strong> on campus:
           </p>
+          <ul className="list-disc ml-6 space-y-2 mb-4">
+            <li className="font-mono">
+              <strong>80+ events</strong> hosted in year one
+            </li>
+            <li className="font-mono">
+              <strong>5,000+ attendees</strong> engaged
+            </li>
+            <li className="font-mono">
+              <strong>Technical partnership with IC Hack</strong>
+            </li>
+            <li className="font-mono">
+              <strong>Partnerships with leading labs</strong> - CAIS (US) and SAIL (UK)
+            </li>
+          </ul>
           <SlideShow
             images={[
-              `${BASE_PATH}/portfolio/landing.png`,
-              `${BASE_PATH}/portfolio/skills.png`,
+              `${BASE_PATH}/ai-safety-society/events.png`,
+              `${BASE_PATH}/ai-safety-society/community.png`,
+              `${BASE_PATH}/ai-safety-society/partnership.png`,
             ]}
           />
-          <TypographyH3 className="my-4 ">Space Theme</TypographyH3>
+          
+          <TypographyH3 className="my-4 mt-8">🤝 Building Partnerships</TypographyH3>
           <p className="font-mono mb-2">
-            Dark background + floating particles = out-of-this-world cool.
+            Proactively reached out to world-class institutions and built 
+            meaningful collaborations:
           </p>
-          <SlideShow images={[`${BASE_PATH}/portfolio/navbar.png`]} />
-          <TypographyH3 className="my-4 mt-8">Projects</TypographyH3>
-
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li className="font-mono">
+              <strong>CAIS (Center for AI Safety)</strong> - US leading research lab
+            </li>
+            <li className="font-mono">
+              <strong>SAIL (Stanford AI Lab)</strong> - UK chapter partnership
+            </li>
+            <li className="font-mono">
+              <strong>IC Hack</strong> - Technical collaboration for hackathons
+            </li>
+          </ul>
+          
+          <TypographyH3 className="my-4 mt-8">💡 Key Learnings</TypographyH3>
           <p className="font-mono mb-2">
-            My top personal and freelance projects — no filler, all killer.
+            This experience taught me:
           </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/portfolio/projects.png`,
-              `${BASE_PATH}/portfolio/project.png`,
-            ]}
-          />
-          <p className="font-mono mb-2 mt-8 text-center">
-            This site&apos;s not just a portfolio — it&apos;s a whole vibe.
+          <ul className="list-disc ml-6 space-y-1 mb-4">
+            <li className="font-mono">
+              How to <strong>build a community</strong> from scratch
+            </li>
+            <li className="font-mono">
+              How to <strong>forge partnerships</strong> with world-class institutions
+            </li>
+            <li className="font-mono">
+              How to <strong>execute on an ambitious vision</strong>
+            </li>
+            <li className="font-mono">
+              That I don't wait for opportunities—<strong>I create them</strong>
+            </li>
+          </ul>
+          
+          <p className="font-mono mb-2 mt-8 text-center italic">
+            "I don't wait for opportunities; I create them. This society proved 
+            I have the leadership to build something impactful at scale."
           </p>
         </div>
       );
     },
   },
   {
-    id: "ghostchat",
-    category: "Anonymous chat",
-    title: "GhostChat",
-    src: "/assets/projects-screenshots/ghostchat/1.png",
-    screenshots: ["1.png", "2.png", "3.png", "4.png"],
-    live: "https://ghostchat.vercel.app",
-    github:"https://github.com/Naresh-Khatri/GhostChat",
+    id: "firebase-gdg",
+    category: "Developer Platform",
+    title: "Firebase Demo @ Google DevCon",
+    src: "/assets/projects-screenshots/firebase-gdg/main.png", // TODO: 需要添加截图
+    screenshots: ["platform.png", "presentation.png", "architecture.png"],
     skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.chakra],
-      backend: [PROJECT_SKILLS.supabase],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono ">
-            Ghostchat is your go-to spot for sending anonymous messages without
-            leaving a trace. Powered by Supabase, it&apos;s all about keeping things
-            low-key and secure. Whether you&apos;re sharing secrets, giving feedback,
-            or just having some fun, Ghostchat ensures your identity stays
-            hidden, while your voice is heard. Say what you want, without the
-            worry.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow
-            images={[
-              `${BASE_PATH}/ghostchat/1.png`,
-              `${BASE_PATH}/ghostchat/2.png`,
-              `${BASE_PATH}/ghostchat/3.png`,
-              `${BASE_PATH}/ghostchat/4.png`,
-            ]}
-          />
-        </div>
-      );
-    },
-  },
-  {
-    id: "jra",
-    category: "Result analyzer",
-    title: "JNTUA Results Analyzer",
-    src: "/assets/projects-screenshots/jra/1.png",
-    screenshots: ["1.png"],
-    live: "https://naresh-khatri.github.io/JNTUA-result-analyser-spa/#/",
-    skills: {
-      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.vue],
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+      ],
       backend: [
+        PROJECT_SKILLS.firebase,
         PROJECT_SKILLS.node,
-        PROJECT_SKILLS.mongo,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.docker,
       ],
     },
+    live: undefined, // 内部项目
+    github: undefined,
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono ">
-            JNTUA Results Analyzer was a revolutionary tool designed to simplify
-            and enhance the experience of accessing academic results. It served
-            as a powerful proxy between the JNTUA university results website and
-            its users, offering a range of features that made result analysis
-            faster and more efficient. Here&apos;s what made it stand out:
+          <TypographyP className="font-mono text-xl font-bold text-center mb-4">
+            Building for Google Developer Conference 2025
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Built the Firebase demo platform for Shanghai's Google Developer Group, 
+            showcasing cutting-edge Firebase features at the 2025 Google Developer 
+            Conference. Presented our architecture to executives from Alibaba Cloud 
+            and other leading tech companies.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <SlideShow images={[`${BASE_PATH}/jra/1.png`]} />
-          <TypographyH3 className="my-4 mt-8">
-            Effortless Results Retrieval
-          </TypographyH3>
-          {/* Effortless Results Retrieval: */}
-          <ul className="list-disc ml-6">
+          
+          <TypographyH3 className="my-4 mt-8">🎯 The Mission</TypographyH3>
+          <p className="font-mono mb-2">
+            Create a production-grade demo platform that showcases Firebase's 
+            capabilities to thousands of developers and tech leaders at one of 
+            Asia's premier developer conferences.
+          </p>
+          
+          <TypographyH3 className="my-4 mt-8">🏗️ Technical Architecture</TypographyH3>
+          <p className="font-mono mb-2">
+            Built a comprehensive platform demonstrating:
+          </p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
             <li className="font-mono">
-              Search all your results using a single roll number, eliminating
-              the tedious task of sifting through thousands of rows on the
-              official site.
+              <strong>Real-time Database</strong> - Live collaboration features
+            </li>
+            <li className="font-mono">
+              <strong>Authentication</strong> - Multi-provider auth flows
+            </li>
+            <li className="font-mono">
+              <strong>Cloud Functions</strong> - Serverless backend logic
+            </li>
+            <li className="font-mono">
+              <strong>Hosting & CDN</strong> - Global deployment strategy
             </li>
           </ul>
-          <TypographyH3 className="my-4 mt-8">Class-Wise Results:</TypographyH3>
-          <ul className="list-disc ml-6">
+          <SlideShow
+            images={[
+              `${BASE_PATH}/firebase-gdg/platform.png`,
+              `${BASE_PATH}/firebase-gdg/presentation.png`,
+              `${BASE_PATH}/firebase-gdg/architecture.png`,
+            ]}
+          />
+          
+          <TypographyH3 className="my-4 mt-8">🎤 Presentation Impact</TypographyH3>
+          <p className="font-mono mb-2">
+            Presented our architecture to senior executives from:
+          </p>
+          <ul className="list-disc ml-6 space-y-1 mb-4">
             <li className="font-mono">
-              class-wise results effortlessly by entering a roll number range.
-              No more manual searches or filtering.
+              <strong>Alibaba Cloud</strong> - Cloud infrastructure leaders
+            </li>
+            <li className="font-mono">
+              <strong>Google Developer Relations</strong> - Firebase team
+            </li>
+            <li className="font-mono">
+              <strong>Leading Chinese tech companies</strong>
             </li>
           </ul>
-          <TypographyH3 className="my-4 mt-8">Faculty Features:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Faculty members could download batch results in Excel format,
-              making administrative tasks a breeze.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">
-            Enhanced Data Insights:
-          </TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Each result came with additional features including:
-              <ul className="list-disc font-mono ml-6">
-                <li>
-                  <strong>CGPA Calculations: </strong>Easily track your
-                  cumulative grade point average.
-                </li>
-                <li>
-                  <strong>Charts:</strong> Visualize your academic performance
-                  with comprehensive charts.
-                </li>
-                <li>
-                  <strong>Future Projections:</strong> Get insights into
-                  potential future outcomes based on current performance.
-                </li>
-                <li>
-                  <strong> Backlog Counts: </strong>Keep track of your backlog
-                  subjects at a glance.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Performance:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              The application was significantly faster and more efficient than
-              the official site, providing a smoother user experience.
-            </li>
-          </ul>
-          <TypographyH3 className="my-4 mt-8">Downfall:</TypographyH3>
-          <ul className="list-disc ml-6">
-            <li className="font-mono">
-              Unfortunately, as of May 2022, the tool stopped working due to the
-              introduction of CAPTCHA on the official JNTUA results site, which
-              disrupted the seamless functionality of the app. JNTUA Results
-              Analyzer transformed the way students and faculty interacted with
-              academic results, making it a must-have tool until its unexpected
-              shutdown.
-            </li>
-          </ul>
+          
+          <TypographyH3 className="my-4 mt-8">💡 Key Achievement</TypographyH3>
+          <p className="font-mono mb-2">
+            This project demonstrated my ability to <strong>bridge the gap between 
+            deep tech and real-world application</strong>, delivering enterprise-grade 
+            solutions under tight deadlines for high-stakes events.
+          </p>
+          
+          <p className="font-mono mb-2 mt-8 text-center italic">
+            "Bridging deep tech with real-world impact. From code to conference stage."
+          </p>
         </div>
       );
     },

@@ -33,17 +33,19 @@ const BASE_PATH = "/assets/projects-screenshots";
 const ProjectsLinks = ({ live, repo }: { live?: string; repo?: string }) => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-start gap-3 my-3 mb-8">
-      <Link
-        className="font-mono underline flex gap-2"
-        rel="noopener"
-        target="_new"
-        href={live}
-      >
-        <Button variant={"default"} size={"sm"}>
-          Visit Website
-          <ArrowUpRight className="ml-3 w-5 h-5" />
-        </Button>
-      </Link>
+      {live && (
+        <Link
+          className="font-mono underline flex gap-2"
+          rel="noopener"
+          target="_new"
+          href={live}
+        >
+          <Button variant={"default"} size={"sm"}>
+            Visit Website
+            <ArrowUpRight className="ml-3 w-5 h-5" />
+          </Button>
+        </Link>
+      )}
       {repo && (
         <Link
           className="font-mono underline flex gap-2"

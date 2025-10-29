@@ -265,7 +265,7 @@ const projects: Project[] = [
           </TypographyP>
           <TypographyP className="font-mono">
             Wayve (优航AI) is an AI co-pilot that guides students from college 
-            application to their first career. We're building on proven success from 
+            application to their first career. We&apos;re building on proven success from 
             Frontier Academy, which achieved a <strong>~90% G5 offer rate</strong> with 
             1,500+ students served.
           </TypographyP>
@@ -273,7 +273,7 @@ const projects: Project[] = [
           
           <TypographyH3 className="my-4 mt-8">🎯 Mission</TypographyH3>
           <p className="font-mono mb-2">
-            Fixing the "broken bridge" between education and employment by making 
+            Fixing the &ldquo;broken bridge&rdquo; between education and employment by making 
             elite guidance accessible to every ambitious student, not just the privileged few.
           </p>
           <SlideShow
@@ -345,8 +345,8 @@ const projects: Project[] = [
           </ul>
           
           <p className="font-mono mb-2 mt-8 text-center italic">
-            "From profitable R&D lab to globally scalable AI platform. 
-            This is how we democratize access to elite guidance."
+            &ldquo;From profitable R&D lab to globally scalable AI platform. 
+            This is how we democratize access to elite guidance.&rdquo;
           </p>
         </div>
       );
@@ -380,9 +380,9 @@ const projects: Project[] = [
           </TypographyP>
           <TypographyP className="font-mono">
             Built from zero to one as a solo founder, Frontier Academy is now 
-            the market leader in elite university admissions consulting. We've 
+            the market leader in elite university admissions consulting. We&apos;ve 
             created a repeatable system for success, achieving a <strong>near-90% 
-            G5 offer rate</strong> in hyper-competitive programs like Imperial's 
+            G5 offer rate</strong> in hyper-competitive programs like Imperial&apos;s 
             Bioengineering.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
@@ -391,7 +391,7 @@ const projects: Project[] = [
           <p className="font-mono mb-2">
             As a solo founder, I had to rapidly master every aspect of building 
             a business from scratch—marketing, sales, product design, and client 
-            success. This wasn't just consulting; it was creating a repeatable 
+            success. This wasn&apos;t just consulting; it was creating a repeatable 
             system for student success.
           </p>
           
@@ -441,8 +441,8 @@ const projects: Project[] = [
           </ul>
           
           <p className="font-mono mb-2 mt-8 text-center italic">
-            "Frontier Academy proved I have the grit and resourcefulness to build 
-            a successful company. It's now our R&D lab for scaling with AI."
+            &ldquo;Frontier Academy proved I have the grit and resourcefulness to build 
+            a successful company. It&apos;s now our R&D lab for scaling with AI.&rdquo;
           </p>
         </div>
       );
@@ -464,11 +464,11 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono text-xl font-bold text-center mb-4">
-            Building Imperial's First AI Safety Community
+            Building Imperial&apos;s First AI Safety Community
           </TypographyP>
           <TypographyP className="font-mono">
             Founded the first-ever AI Safety society at Imperial College London, 
-            identifying a critical gap in the university's ecosystem and building 
+            identifying a critical gap in the university&apos;s ecosystem and building 
             a thriving community from nothing.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
@@ -532,13 +532,13 @@ const projects: Project[] = [
               How to <strong>execute on an ambitious vision</strong>
             </li>
             <li className="font-mono">
-              That I don't wait for opportunities—<strong>I create them</strong>
+              That I don&apos;t wait for opportunities—<strong>I create them</strong>
             </li>
           </ul>
           
           <p className="font-mono mb-2 mt-8 text-center italic">
-            "I don't wait for opportunities; I create them. This society proved 
-            I have the leadership to build something impactful at scale."
+            &ldquo;I don&apos;t wait for opportunities; I create them. This society proved 
+            I have the leadership to build something impactful at scale.&rdquo;
           </p>
         </div>
       );
@@ -569,7 +569,7 @@ const projects: Project[] = [
             Building for Google Developer Conference 2025
           </TypographyP>
           <TypographyP className="font-mono">
-            Built the Firebase demo platform for Shanghai's Google Developer Group, 
+            Built the Firebase demo platform for Shanghai&apos;s Google Developer Group, 
             showcasing cutting-edge Firebase features at the 2025 Google Developer 
             Conference. Presented our architecture to executives from Alibaba Cloud 
             and other leading tech companies.
@@ -578,9 +578,9 @@ const projects: Project[] = [
           
           <TypographyH3 className="my-4 mt-8">🎯 The Mission</TypographyH3>
           <p className="font-mono mb-2">
-            Create a production-grade demo platform that showcases Firebase's 
+            Create a production-grade demo platform that showcases Firebase&apos;s 
             capabilities to thousands of developers and tech leaders at one of 
-            Asia's premier developer conferences.
+            Asia&apos;s premier developer conferences.
           </p>
           
           <TypographyH3 className="my-4 mt-8">🏗️ Technical Architecture</TypographyH3>
@@ -633,7 +633,7 @@ const projects: Project[] = [
           </p>
           
           <p className="font-mono mb-2 mt-8 text-center italic">
-            "Bridging deep tech with real-world impact. From code to conference stage."
+            &ldquo;Bridging deep tech with real-world impact. From code to conference stage.&rdquo;
           </p>
         </div>
       );
